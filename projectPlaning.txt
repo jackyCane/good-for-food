@@ -1,0 +1,31 @@
+USER STORIES (description of the applictaion from the user perspective)
+
+I want to ...
+    1.  search recipes, so that I can find new ideas for meals
+    2. be able to update the number of servings, so that I can cook a meal for differrent number of people
+    3. to bookmark recipes
+    4. create my own recipes
+    5. be able to see my bookmarks and own recipes when i Leave the page and come bakc later
+
+
+FEATURES
+    1. Search for recipes
+        --> search functionality, input field to send request to API with searched keywords
+        --> display result with pagination in case of many results
+        --> display recipe with some data as cooking time and ingredients
+    2. Update the number of servings
+        --> change servings functionality, update the number of ingredients
+    3. Bookmark recipes
+        --> bookmark and display recipes somewhere
+    4. Create own recipes
+        --> user can upload own recipes
+        --> user recipes will automaticaly be bookmarked
+        --> user can see only their own recipes, not recipeed from other users
+    5. Store bookmark
+        --> store data using localStorage
+        --> on page load, read saved bookmars from localStorage and display
+
+FLOWCHART (PART 1)
+    1. user searches --> load results (async) --> render search
+    2. user clicks pagination -->render search--> render pagination buttons
+    3. user select recipe --> load recipe (async) --> render recipe && page loads with the recipe ID
